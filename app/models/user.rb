@@ -1,7 +1,6 @@
 class User < ApplicationRecord
-  has_many :diaries
-  has_many :likes
-
-  validates :name, {presence: true}
-  validates :email, {presene: true, uniqueness: true}
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :validatable
 end
