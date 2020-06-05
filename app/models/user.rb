@@ -7,6 +7,6 @@ class User < ApplicationRecord
   has_many :diaries
   has_many :likes
 
-  validates :name, {presence: true, length: { maximum: 10 }}
-  validates :email, {presene: true, uniqueness: true}
+  validates :name, presence: true, length: { maximum: 10 }
+  validates :email, presence: true, uniqueness: true
 end
