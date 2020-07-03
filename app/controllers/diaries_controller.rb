@@ -7,4 +7,13 @@ class DiariesController < ApplicationController
   def new
   end
 
+  def create
+    Diary.create(diary_params)
+  end
+
+  private
+  def diary_params
+    params.permit(:content)
+  end
+
 end
