@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
   root  'diaries#index'
   resources :diaries do
-    resources :likes
+    resources :likes, only: [:create]
   end
+  resources :users, only: [:show]
 end
