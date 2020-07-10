@@ -1,6 +1,6 @@
 class DiariesController < ApplicationController
 
-  before_action :move_to_index, except: [:index]
+  # before_action :move_to_index, except: [:index]
 
   def index
     @diaries = Diary.all.order(created_at: :desc)
