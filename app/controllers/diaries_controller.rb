@@ -10,7 +10,23 @@ class DiariesController < ApplicationController
   end
 
   def create
-    Diary.create(diary_params)
+    Diary.create(content: diary_params[:content], user_id: current_user.id)
+  end
+
+  def edit
+    @diary = Diary.find(params[:id])
+  end
+
+  def update
+    diary = Diary.find(params[:id])
+    if diary.user_id == current_user.id
+      diary.update(diary_params)
+    end
+  end
+
+  def destroy
+    diary = Diary.find(params[:id])
+    diary.destroy if diary.user_id == current_user.id
   end
 
   private
