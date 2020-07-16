@@ -13,6 +13,10 @@ class DiariesController < ApplicationController
     Diary.create(content: diary_params[:content], user_id: current_user.id)
   end
 
+  def show
+    @diary = Diary.find(params[:id])
+  end
+
   def edit
     @diary = Diary.find(params[:id])
   end
