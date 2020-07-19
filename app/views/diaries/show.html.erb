@@ -25,7 +25,7 @@
     <!-- ここからフォーム -->
     <% if current_user %>
       <%= form_tag("/diaries/#{@diary.id}/likes", method: :post, id: "new_like") do %>
-        <textarea cols="30" name="text" placeholder="コメントする" rows="2" class="textbox"></textarea>
+        <textarea cols="30" name="content" placeholder="コメントする" rows="2" class="textbox"></textarea>
         <input type="submit" value="SENT">
       <% end %>
     <% end %>
