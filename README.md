@@ -32,3 +32,11 @@ Things you may want to cover:
 
 # Usage
 ユーザーの日記を記録・表示させることができる。
+
+# DB設計
+
+# Usersテーブル
+
+# Diariesテーブル
+
+# Likesテーブル
