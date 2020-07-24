@@ -1,4 +1,4 @@
-# README
+
 
 # NewRead
 日記を保存するアプリ。
