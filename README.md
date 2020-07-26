@@ -20,6 +20,13 @@
 ### Association
 
 # Diariesテーブル
+|Column|Type|Options|
+|------|----|-------|
+| ||null: false|
+| ||null: false|
+| ||null: false|
 ### Association
 
 # Likesテーブル
+
+### Association
