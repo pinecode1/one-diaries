@@ -28,5 +28,10 @@
 ### Association
 
 # Likesテーブル
+|Column|Type|Options|
+|------|----|-------|
+| ||null: false|
+| ||null: false|
+| ||null: false|
 
 ### Association
