@@ -22,16 +22,13 @@
 # Diariesテーブル
 |Column|Type|Options|
 |------|----|-------|
-| ||null: false|
-| ||null: false|
-| ||null: false|
+|content||null: false|
 ### Association
 
 # Likesテーブル
 |Column|Type|Options|
 |------|----|-------|
-| ||null: false|
-| ||null: false|
-| ||null: false|
+|user_id||null: false|
+|diary_id||null: false|
 
 ### Association
