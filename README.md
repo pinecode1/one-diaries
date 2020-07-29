@@ -19,6 +19,9 @@
 |password|string|null: false|
 ### Association
 
+・has_many :diaries
+・has_many :likes
+
 # Diariesテーブル
 |Column|Type|Options|
 |------|----|-------|
