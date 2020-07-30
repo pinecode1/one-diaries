@@ -28,6 +28,9 @@
 |content||null: false|
 ### Association
 
+・belongs_to :user
+・has_many :likes
+
 # Likesテーブル
 |Column|Type|Options|
 |------|----|-------|
@@ -35,3 +38,5 @@
 |diary_id||null: false|
 
 ### Association
+・belongs_to :user
+・belongs_to :diary
