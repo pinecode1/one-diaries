@@ -25,7 +25,7 @@
 # Diariesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|content||null: false|
+|content|string|null: false|
 ### Association
 
 ・belongs_to :user
