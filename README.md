@@ -34,8 +34,8 @@
 # Likesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user_id||null: false|
-|diary_id||null: false|
+|user_id|integer|null: false|
+|diary_id|integer|null: false|
 
 ### Association
 ・belongs_to :user
