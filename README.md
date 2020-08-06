@@ -19,8 +19,8 @@
 |password|string|null: false|
 ### Association
 
-・has_many :diaries
-・has_many :likes
+- has_many :diaries
+- has_many :likes
 
 # Diariesテーブル
 |Column|Type|Options|
@@ -28,8 +28,8 @@
 |content|string|null: false|
 ### Association
 
-・belongs_to :user
-・has_many :likes
+- belongs_to :user
+- has_many :likes
 
 # Likesテーブル
 |Column|Type|Options|
@@ -38,5 +38,5 @@
 |diary_id|integer|null: false|
 
 ### Association
-・belongs_to :user
-・belongs_to :diary
+- belongs_to :user
+- belongs_to :diary
